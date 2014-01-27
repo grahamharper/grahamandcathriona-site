@@ -1,0 +1,9 @@
+body {
+  background: #fff url('g_and_c_iphone.jpg') center 20px no-repeat;
+}
+#about {
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  padding: 235px 15px 15px 15px;
+  background: #fff url('g_and_c_iphone.jpg') center 20px no-repeat;
+}

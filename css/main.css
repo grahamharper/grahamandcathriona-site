@@ -1,0 +1,322 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	padding-left: 40px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}			
+
+/*
+ * Styles
+ *
+ */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+.img-responsive {
+	max-width: 100%;
+	height: auto;	
+}
+
+.img-circle {
+	border-radius:50%;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+* { box-sizing: border-box; }
+
+html {
+	color: #fff;
+	height: 100%;
+}
+
+body {
+	background-color: #ededed;
+	height: 100%;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.428;
+}
+
+.gradient-bg {
+   background-color: #C644FC; 
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C644FC), to(#5856D6));
+   background-image: -webkit-linear-gradient(top, #C644FC, #5856D6); 
+   background-image:    -moz-linear-gradient(top, #C644FC, #5856D6);
+   background-image:     -ms-linear-gradient(top, #C644FC, #5856D6);
+   background-image:      -o-linear-gradient(top, #C644FC, #5856D6);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "AvenirNext-Heavy", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	margin-top: 0.2rem;
+	margin-bottom: 0.5rem;
+	line-height: 1.4;
+}
+
+a:link {
+	color: #1AD6FD;
+	text-decoration: none;
+}
+a:visited {
+	color: #1AD6FD;
+}
+a:hover,a:focus {
+	color: #62dbf3;
+	text-decoration: none;
+}
+a:active {}
+
+.intro {
+	margin-top: 20px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+p {
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.428;
+	margin-bottom: 15px;
+}
+
+hr {
+	height: 2px;
+	width: 70px;
+	background-color: #C0392B;
+	margin: 2.75em auto 3.25em;
+	border: 0 none;
+}
+
+hr.title {
+	background-color: #fff;
+}
+
+.sub-heading {
+	font-size: 24px;
+	color: #E4B7F0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 15px;
+}
+
+.intro {
+	margin-bottom: 40px;
+}
+
+.logo {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.site-link {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+a.btn {
+	font-family: "AvenirNext-Heavy", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	border-color: #1AD6FD;
+	background-color: transparent;
+	transition: background-color 0.2s ease;
+}
+
+a.btn:hover {
+	color: #5856D6;
+	background-color: #1AD6FD;
+}
+
+.btn {
+	display: block;
+	padding: 24px 12px;
+	margin-bottom: 0;
+	font-weight: normal;
+	line-height: 1.428571429;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid #fff;
+	border-radius: 4px;
+}
+
+.message {
+	background-color: #ffffff;
+	padding: 20px;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+}
+
+.avatar-container {
+	max-width: 200px;
+	margin: 0 auto 20px;
+}
+
+.avatar {
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);	
+}
+
+/*
+ * Sierra Leone
+ *
+ */
+
+.sierra {
+	background: #333 url('../images/freetown.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+dim {
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	overflow-y: scroll;	
+}
+
+.sierra .intro h1 {
+	-webkit-text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+	-moz-text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+	text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.content-block {
+	background: rgba(0,0,0,0.75);
+	background: #fff;
+	color: #444;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#donate h2 {
+	display: inline-block;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	
+	.intro {
+		margin-top: 80px;
+	}
+
+	h1 {
+		font-size: 56px;
+	}
+	
+	p {
+		font-size: 16px;
+	}
+	
+	.content-block {
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+	
+	.col-md-6 {
+		float: left;
+		width: 50%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+}

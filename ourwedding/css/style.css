@@ -1,0 +1,404 @@
+/*
+Author: 
+Project:
+Date:
+Credit: Lee Munroe www.leemunroe.com
+*/
+
+
+/* 
+# CSS contents ###################
+* 1 Reset defaults
+* 2 Layout
+* 3 Nav
+* 4 Headings
+* 5 Lists
+* 6 Images
+* 7 Links
+* 8 Forms
+* 9 Tables
+* 10 Typography 
+* 11 Other
+*/
+
+
+/* 
+# Colour reference ###################
+
+
+*/
+ 
+/*
+# Reset defaults ################### 
+*/
+
+
+/* Eric Meyer's Reset Reloaded */
+/* http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {overflow: -moz-scrollbars-vertical;} /* Mozilla scrollbar fix */
+
+#skipto{position:absolute;left:-9999px;top:-9999px;} /* Hides the skip to link - useful for screen readers */
+
+.cf:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;} /* Automatically clears after any element with this class */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+display: block;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+# Layout ################### 
+*/
+
+body{
+	font:75%/1.5  "Georgia", Times, serif;
+	color:#666;
+	background: #fff url(../images/bg_pattern.jpg);
+}
+
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+	background: transparent url(../images/header-bg.png) no-repeat 50% 0;
+	height: 281px;
+	margin-top: 40px;
+}
+
+#main {
+	background: transparent url(../images/main-bg.png) repeat-y 50% 0;
+	padding: 20px 150px;
+}
+
+div.shout {
+	margin-bottom: 40px;
+}
+
+#main section {
+	border-bottom: 1px dashed #666666;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+#main iframe {
+	border: 1px solid #ccc;
+	margin-top: 30px;
+}
+
+footer {
+	background: url(../images/footer-bg.png) no-repeat 50% 0;
+	height: 108px;
+	text-align: center;
+	padding-top: 120px;
+}
+
+ul#bridal-party {
+
+}
+
+ul#bridal-party li, ul#accommodation li {
+	display: block;
+	border-bottom: 1px dashed #666666;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+}
+
+ul#bridal-party li p{
+	display: block;
+	float: left;
+	position: relative;
+	top: 50%;
+	font-style: italic;
+}
+
+ul#bridal-party li p b{
+	display: block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 22px;
+	font-style: normal;
+}
+
+.instagram {
+	border: 1px dotted #666666;
+	font-size: 20px;
+	padding: 20px;
+	width: 608px;
+	margin-bottom: 20px;
+}
+
+.instagram .text {
+	width: 480px;
+}
+
+.instagram h2 {
+	font-size: 18px;
+}
+
+.instagram a {
+	text-decoration: none;
+	border: none;
+}
+
+.instagram img {
+	background: none !important;
+	padding: 0px !important;
+	border: 0px solid #ccc !important;
+	margin: 0 0 0 0 !important;
+}
+
+.instagram span.sub {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.instagram span.hashtag {
+	font-weight: bold;
+}
+
+/*
+# Nav ################### 
+*/
+
+nav {
+	height: 90px;
+	background: transparent url(../images/nav-bg.png) no-repeat 50% 0;
+	position: relative;
+	top: 191px;
+	font-weight: bold;
+	line-height: 87px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+nav div.left {
+	float: left;
+	position: relative;
+	left: 100px;
+	width: 330px;
+	border: 0px solid grey;
+}
+
+nav div.right {
+	float: right;
+	position: relative;
+	right: 100px;
+	width: 330px;
+	border: 0px solid grey;
+}
+
+nav a {
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+	/* margin-left: 35px; */
+	padding: 15px;
+	opacity: 0.7;
+}
+
+nav a:hover {
+	opacity: 1;
+}
+
+nav a.current {
+	opacity: 1;
+}
+
+/*
+# Headings ################### 
+*/
+
+h1{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	color: #444;
+}
+
+h2{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 22px;
+	margin-bottom: 10px;
+	color: #5690B4;
+}
+
+h3{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #444;
+}
+
+h4{
+	font-size: 14px;
+}
+
+h1.shout {
+	text-align: center;
+}
+
+h2.shout {
+	text-align: center;
+	font-family: Georgia, Times, serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 18px;
+	color: #666;
+}
+
+#logo{width:;height:;background:url(images/logo.gif) no-repeat;}
+#logo a{display:block;height:100%;width:100%;}
+#logo a span{position:absolute;left:-9999px;top:-9999px;}
+
+/*
+# Lists ################### 
+*/
+
+ol {
+	list-style: decimal;
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+ul {
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+
+/*
+# Images ################### 
+*/
+
+img{border:none;}
+img.left{margin:0 10px 10px 0;}
+img.right{margin:0 0 10px 10px;}
+a img {border: none;}
+
+#main img {
+	background: #eee;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin: 0 0 3% 0;
+}
+
+#main img.left {
+	margin-right: 20px;
+}
+
+#main img.right {
+	margin-left: 20px;
+}
+
+img.hero {
+	padding: 20px;
+}
+
+/*
+# Links ################### 
+*/
+
+a{
+	color: #ff2655;
+}
+a:hover{
+	
+}
+
+/*
+# Forms ################### 
+*/
+
+
+
+/*
+# Tables ################### 
+*/
+
+
+
+/*
+# Typography ################### 
+*/
+
+p{
+	margin:0 0 1.5em;
+	font-family: Georgia, Times, serif;
+	color: #666666;
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+section p {
+	display: block;
+	width: 380px;
+}
+
+footer p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+p.address {
+	font-style: italic;
+	color: #999;
+}
+
+
+/*
+# Other ################### 
+*/
+
+.right{float:right;}
+.left{float:left;}
+.clear{clear:both;}
+.alignleft{text-align: left;}
+.alignright{text-align: right;}
+.aligncenter{text-align: center;}
